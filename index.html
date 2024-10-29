@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steam Jga</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Steam JGA</h1>
+    <div class="inserirGame">
+      <span>Inserir Novo Jogo</span>
+      <button id="insertBtn" onclick="openModal()">+</button>
+    </div>
+    <hr />
+    <dialog>
+      <h3>Insira um jogo:</h3>
+      Nome: <input type="text" id="gameName" required /> Capa:
+      <input type="text" id="gameCover" required />
+      <button id="sendBtn" onclick="sendDataToServer()">Inserir</button>
+      <button id="cancelBtn" onclick="cancelBtn()">Cancelar</button>
+    </dialog>
+    <div class="allgames"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
